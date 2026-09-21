@@ -1,0 +1,56 @@
+# === Never commit: credentials ===
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+**/credentials*
+
+# === Never commit: large files ===
+/data/
+/datasets/
+/checkpoints/
+/ckpt/
+/outputs/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.npy
+*.npz
+*.parquet
+*.feather
+*.h5
+
+# === Experiment artifacts ===
+/wandb/
+/runs/
+/tf-logs/
+/logs/
+*.log
+/mlruns/
+
+# Results directory: keep only final tables and figures, not intermediate dumps
+results/**/*.pkl
+results/**/raw/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === System ===
+.DS_Store
+
+# Local permission config, not committed
+.claude/settings.local.json
